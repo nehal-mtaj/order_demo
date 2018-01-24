@@ -1,0 +1,19 @@
+<h1>Orders#show</h1>
+<p id="notice"><%= notice %></p>
+<body bg="red">
+
+<table border="2" align="center">
+<tr>
+  <th><strong>cust_name:</strong></th>
+ <td><%= @order.cust_name %></td>
+</tr>
+
+<tr>
+  <th><strong> cust_phone_no</strong></th>
+ <td> <%= @order.cust_phone_no %></td>
+</tr>
+<tr>
+<td colspan="2" style="text-align: center;"><%= link_to 'Edit', edit_order_path(@order) %><%= link_to 'Back', order_path %></td>
+</tr>
+</body>
+</table>
